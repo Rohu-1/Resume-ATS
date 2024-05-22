@@ -30,13 +30,15 @@ and big data engineer. Your task is to evaluate the resume based on the given jo
 You must consider the job market is very competitive and you should provide 
 best assistance for improving thr resumes. Assign the percentage Matching based 
 on Jd and
-the missing keywords with high accuracy
+the missing keywords with high accuracy.Please make sure percentage you are providing is highly accurate.
 resume:{text}
 description:{jd}
 
-I want the response single string having the structure
+I want the response in single string having the structure
 {{"JD Match":"%","MissingKeywords:[]","Profile Summary":""}}
 
+Also provide information like contact number ,gmail,Collage,Projects and Work Experience.
+please make sure that results are accurate pls read the job description properly and make sure give response according to that.
 """
 # Set page configuration
 st.set_page_config(
@@ -92,8 +94,8 @@ st.markdown(
 )
 
 
-st.markdown("<h1 style='color: #007BFF;'>Smart ATS</h1>", unsafe_allow_html=True)
-st.markdown("<h1 style='color: #007BFF;'>Improve your Resume ATS</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color: #000000;'>Smart ATS</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color: #000000;'>Improve your Resume ATS</h1>", unsafe_allow_html=True)
 # Custom CSS for styling
 
 jd=st.text_area("Paste the Job Description")
@@ -105,7 +107,7 @@ st.markdown(
     """
     <style>
     .stButton button {
-        background-color: #007BFF; /* Green background */
+        background-color: #000000; /* Green background */
         border: none; /* Remove borders */
         color: white; /* White text */
         padding: 15px 32px; /* Some padding */
